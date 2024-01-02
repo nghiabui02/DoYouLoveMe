@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love me ???</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="perconnect" href="">
+    <style>
+        button {
+            border: none;
+            background-color: #5666a5;
+            border-radius: 5px;
+            color: #ffffff;
+            cursor: pointer;
+            padding: 0px 30px;
+            display: inline-block;
+            margin: 15px 30px;
+            text-transform: uppercase;
+            line-height: 46px;
+            font-weight: 400;
+            font-size: 1em;
+            outline: none;
+            position: relative;
+            overflow: hidden;
+            font-size: 16px;
+            border-radius: 23px;
+            letter-spacing: 2px;
+            -webkit-transform: translateZ(0);
+            -webkit-transition: all 0.35s ease;
+            transition: all 0.35s ease;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body background="https://haycafe.vn/wp-content/uploads/2021/12/hinh-anh-de-thuong-ve-tinh-yeu-cute-dang-yeu.jpg">
+<h1  style="position: absolute; left: calc(50% - 120px); top: 270px; color: #808080; font-family: 'Satisfy', cursive;" >Do you love me ?</h1>
+<a><button type="button" value="YES" onclick="yesclick()" style="position: absolute; left:580px; top: 350px">Yes</button></a>
+<button id="no" type="button" value="NO" onmouseover="Nohover()" style="position: absolute; left:700px; top: 350px">No</button>
+<script>
+    function yesclick() {
+        document.write  ('Bé chọn đu rồi nè <3')
+    }
+    function Nohover() {
+        let randomwidth = Math.random() * window.innerWidth;
+        let randomheight = Math.random() * window.innerHeight;
+        let buttonno = document.getElementById("no");
+        buttonno.style.left = randomwidth + "px";
+        buttonno.style.top = randomheight + "px";
+        console.log(buttonno.style.left,buttonno.style.top)
+    }
+</script>
+</body>
+</html>
